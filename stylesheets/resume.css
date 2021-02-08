@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/ind7qjh.css");
+
+/* Variable Declarations*/ 
+html {
+    /* Colors */
+    --black: #0C0C0C;
+    --light_grey: #DADADA;
+    --grey:#434343 ;
+    --off_white: #f7f7f7;
+    --off_white_1: #f7f7f7f3;
+
+    /* Font Styles*/
+    --title_1: normal 700 24px/28.8px filson-pro, sans-serif;
+    --header_1: normal 800 12px/14.4px Avenir, sans-serif;
+	--header_2: normal 800 10.5px/20px Avenir, sans-serif;
+	--header_3: normal 300 12px/14.4px Avenir, sans-serif;
+    --paragraph_1: normal 300 10px/20px Avenir, sans-serif;
+}
+
+/* Styles */
+
+a {
+	color: var(--grey);
+	text-decoration: none;
+}
+
+.button {
+	background-color: var(--grey);
+	border-radius: 30px;
+	color: white;
+	font: var(--header_1);
+	padding: 5px 30px;
+	width: auto;
+	margin: 20px auto;
+}
+
+h1 {
+	color: var(--black);
+	font: var(--header_1);
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	color: var(--grey);
+	font: var(--header_2);
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	color: var(--grey);
+	font: var(--header_3);
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	color: var(--black);
+	font: var(--title_1);
+	margin: 0;
+	padding: 0;
+	
+}
+
+.experience li {
+	color: var(--grey);
+	font: var(--paragraph_1);
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	color: var(--grey);
+	font: var(--paragraph_1);
+	margin: 0;
+	padding: 0;
+}
+
+.p2 {
+	line-height: 12px;
+}
+
+/* Layout */
+
+html {
+	background-color: var(--light_grey);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.continued {
+	list-style-type: none;
+	padding-left: 18px;
+}
+
+.relevant_container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.courses {
+	align-items: baseline;
+	display: inline-flex;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.education {
+	width: 100%;
+}
+.education_split {
+	align-self: flex-end;
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.restricted .right {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.restricted .right > * {
+	margin: 0;
+	padding: 0;
+}
+
+.doc {
+	background-color: white;
+	height: 792px;
+	margin: 10 auto 0;
+	/*overflow: hidden;*/
+	width: 612px;
+}
+
+.doc .main_container {
+	align-items: flex-start;
+	align-self: center;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	height: 100%;
+	justify-content: space-between;
+	padding: 36px;
+	width: 100%;
+}
+
+.discription {
+	width: 100%;
+}
+
+.experience {
+	margin: 0;
+	width: 100%;
+}
+.experience_split {
+	align-items: flex-start;
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.experience_split .restricted {
+	align-items: flex-start;
+	display: block;
+	margin: 0;
+	width: 80%;
+}
+
+header {
+	align-items: flex-start;
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	justify-self: flex-start;
+	width: 100%;
+}
+
+.job_title {
+	font-style: italic;
+	font-weight: 300;
+}
+
+.left {
+	text-align: left;
+}
+
+.location {
+	font-style: italic;
+}
+
+ul {
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+	padding-left: 18px;
+}
+
+header .text {
+	padding-right: 7.25px;
+}
+
+header .right {
+	align-items: center;
+	display: inline-flex;
+	justify-content: flex-end;
+}
+
+h1 {
+	margin: 0;
+}
+
+img {
+	height: 63px;
+	width: 63px;
+}
+
+.right {
+	text-align: right;
+}
+
+.experience_container {
+	align-items: flex-start;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	margin: 0;
+	margin-bottom: 9px;
+	width: 100%;
+}
+
+.skills .container {
+	align-items: flex-start;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.highlight {
+	font-weight: 800;
+}
