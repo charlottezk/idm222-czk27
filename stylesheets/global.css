@@ -16,6 +16,20 @@ html {
     --wlkee_blue: #0B38BF;
     --related_blue: #5A8C8C;
 
+    /* Global Styles*/
+    --background-color: var(--off_white);
+    --background-color-alt: var(--light_grey);
+    --header-color: var(--black);
+    --icon-color: var(--grey);
+    --t1-color: var(--black);
+    --t2-color: var(--grey);
+    --para-color: var(--grey);
+    --hover-color-1: var(--sig_orange);
+    --hover-color-2: var(--recordcrate_purple);
+    --hover-color-3: var(--purlsoho_char);
+    --hover-color-4: var(--wlkee_blue);
+    --hover-color-5: var(--related_blue);
+
     /* Font Styles*/
     --title_1: normal 800 2rem/2.6875rem filson-pro, sans-serif;
     --title_2: normal 800 1.125rem/1.5625rem filson-pro, sans-serif;
@@ -25,32 +39,32 @@ html {
 
 }
 
- /* Global Styles*/
+ /* Style Declarations */
 
  body {
     margin: 0;
 }
 
 .footer_text {
-    color: var(--grey);
+    color: (--para-color);
     font: var(--paragraph_1);
     font-size: .75rem;
     line-height: 1rem;
 }
 
 .header_1 {
-    color: var(--black);
+    color: var(--header-color);
     font: var(--header_1);
     margin: 0;
 } 
 
 .header_2 {
-    color: var(--black);
+    color: var(--header-color);
     font: var(--header_2);
 }
 
 html {
-    background-color: var(--off_white);
+    background-color: var(--background-color);
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -59,18 +73,18 @@ html {
 }
 
 :link, :hover, :visited, :active {
-    color: var(--black);
+    color: var(--header-color);
     text-decoration: none;
 }
 
 .paragraph_1 {
-    color: var(--grey);
+    color: var(--para-color);
     font: var(--paragraph_1);
     text-transform: none;
 }
 
 .paragraph_2 {
-    color: var(--grey);
+    color: var(--para-color);
     font: var(--paragraph_1);
     font-size: 1rem;
     line-height: 1.375em;
@@ -78,7 +92,7 @@ html {
 }
 
 .paragraph_3 {
-    color: var(--grey);
+    color: var(--para-color);
     font: var(--paragraph_1);
     text-transform: none;
     font-size: 1.125rem;
@@ -86,17 +100,17 @@ html {
 }
 
 .title_1 {
-    color: var(--black);
+    color: var(--t1-color);
     font: var(--title_1);
 }
 
 .title_2 {
-    color: var(--grey);
+    color: var(--t2-color);
     font: var(--title_2);
 }
 
 .title_3 {
-    color: var(--grey);
+    color: var(--t2-color);
     font: var(--title_1);
     font-size: 3rem;
     line-height: 3.5rem;
@@ -108,32 +122,32 @@ html {
 }
 
 #view:hover, #view:active {
-    color: var(--sig_orange);
+    color: var(--hover-color-1);
 }
 
 #recordcrate:hover, #recordcrate:active {
-    color: var(--recordcrate_purple);
+    color: var(--hover-color-2);
 }
 
 #purl_soho:hover, #purl_soho:active {
-    color: var(--purlsoho_char);
+    color: var(--hover-color-3);
 }
 
 #wlkee:hover, #wlkee:active {
-    color: var(--wlkee_blue);
+    color: var(--hover-color-4);
 }
 
 #related_work:hover, #related_work:active {
-    color: var(--related_blue);
+    color: var(--hover-color-5);
 }
 #about_hero_link:hover, #about_hero_link:active {
-    color: var(--sig_orange);
+    color: var(--hover-color-1);
 }
 
 #about_hero_link {
     text-transform: uppercase;
     margin-top: 2.25rem;
-    color: var(--black);
+    color: var(--header-color);
 }
 
 /* Layout Styles */
@@ -225,7 +239,7 @@ nav .header_1 {
 
 header {
     align-items: center;
-    background-color: var(--light_grey);
+    background-color: var(--background-color-alt);
     display: flex;
     height: auto;
     margin: 0;
@@ -354,6 +368,7 @@ footer .header_2 {
 
 .social_icon {
     width: 28px;
+    color: var(--icon-color);
 }
 
 .social_container {
@@ -363,6 +378,33 @@ footer .header_2 {
     width: 100%;
 }
 
+/* Inclusive Styles */
+
+@media (prefers-contrast: high) {
+    :root {
+        --black: #020202;
+        --light_grey: #e0e0e0;
+        --grey:#222222 ;
+    }
+
+@media (prefers-reduced-motion: reduce) {
+        * { 
+            transition-duration: 0.05s;
+        }
+    }
+    
+@media (prefers-color-scheme: dark) {
+    html {
+        --background-color: var(--grey);
+        --background-color-alt: var(--black);
+        --header-color: var(--off_white);
+        --t1-color: var(--off_white);
+        --t2-color: var(--light_grey);
+        --para-color: var(--light_grey);
+        --icon-color: var(--light_grey);
+
+    }
+    }
 
 /* Responsive Styles */
 @media screen and (max-width: 683px) {
@@ -395,7 +437,6 @@ footer .header_2 {
 }
 
 @media screen and (max-width: 938px) {
-
     .main_container > * {
         width: 100%;
     }
